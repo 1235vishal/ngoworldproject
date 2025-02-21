@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: #333;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 30px;
+  background: #ffffff;
+}
+
+.header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+}
+
+.sub-heading {
+  color: #b37142;
+  font-size: 14px;
+}
+
+/* Hero Image - Adjusted Size */
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8f6ff;
+  padding: 40px 0;
+}
+
+.hero-image img {
+  width: 80%; /* Decreased width for a better visual look */
+  height: 400px; /* Increased height */
+  object-fit: cover; /* Ensures proper aspect ratio */
+  border-radius: 10px;
+}
+
+/* Board Members Section */
+.board-section {
+  background: #b37142;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.board-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.meet {
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.board-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+}
+
+.member-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.position {
+  color: #a77b00;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.bio {
+  font-size: 14px;
+}
+
+/* About Section */
+.about-section {
+  padding: 50px 20px;
+}
+
+.about-section h2 {
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.learn {
+  text-align: center;
+  font-size: 14px;
+  color: #a77b00;
+  margin-bottom: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About Image - Adjusted Size */
+.about-container img {
+  width: 45%; /* Adjusted for a better look */
+  height: 350px; /* Increased height for balance */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+  font-size: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-image img {
+    width: 90%;
+    height: 300px; /* Reduced height for better mobile experience */
+  }
+
+  .board-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 90%;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .about-container img {
+    width: 100%;
+    height: auto; /* Auto height for mobile */
+  }
+}

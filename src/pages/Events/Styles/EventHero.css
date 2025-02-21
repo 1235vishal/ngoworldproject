@@ -1,0 +1,65 @@
+.carousel-image {
+  width: 100%;
+  height: 500px; /* Set a consistent height */
+  object-fit: cover; /* Ensure images scale properly */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  border-radius: 8px;
+  max-width: 80%;
+  margin: auto;
+}
+
+.carousel-caption h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #ffcc00;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 300px; /* Reduce image height on smaller screens */
+  }
+
+  .carousel-caption {
+    padding: 10px;
+    max-width: 90%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.4rem; /* Slightly smaller heading */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Smaller text for better readability */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-image {
+    height: 250px;
+  }
+
+  .carousel-caption {
+    padding: 8px;
+    max-width: 95%;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.9rem;
+  }
+}

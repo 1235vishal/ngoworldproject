@@ -1,0 +1,10 @@
+/* Remove Custom Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}
+
+/* Optionally, you can remove the pagination if you don't want it either */
+.swiper-pagination {
+  display: none;
+}

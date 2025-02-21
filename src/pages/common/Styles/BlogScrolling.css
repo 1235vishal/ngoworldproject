@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.slider-containerB {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+.slider-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #b37142;
+  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.card-wrapper {
+  padding-bottom: 50px; /* Extra space for pagination dots */
+}
+
+.card-itemB {
+  list-style: none;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 22px;
+  border-radius: 15px;
+  text-align: center;
+  border: 3px solid transparent;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease-in-out;
+}
+
+.card-content:hover {
+  border-color: #b37142;
+}
+
+.card-imageB {
+  width: 100%;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 15px 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card-date {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.read-more-button {
+  background: #b37142;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.read-more-button:hover {
+  background: #8f552d;
+}
+
+/* Custom Swiper Navigation */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #b37142;
+  background: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background: #b37142;
+  color: #fff;
+}
+
+.swiper-button-next {
+  right: -40px;
+}
+
+.swiper-button-prev {
+  left: -40px;
+}
+
+/* Move pagination dots below the slider */
+.swiper-pagination {
+  bottom: -20px !important;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+  opacity: 0.6;
+  background: #b37142;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .slider-containerB {
+    padding: 10px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    display: none;
+  }
+
+  .swiper-pagination {
+    bottom: -10px !important;
+  }
+}

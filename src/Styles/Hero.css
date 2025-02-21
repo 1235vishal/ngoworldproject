@@ -1,0 +1,193 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Unique Hero Container */
+.unique-hero-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+/* Unique Hero Slide */
+.unique-hero {
+  margin-top: -29px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.unique-hero.active {
+  opacity: 1;
+  position: relative;
+}
+
+/* Unique Hero Content */
+.unique-hero-content {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.unique-hero-content h1 {
+  font-size: 65px;
+  font-weight: 700;
+  color: #3c2d1a;
+}
+
+.unique-hero-content p {
+  font-size: 28px;
+  margin: 10px 0 20px;
+  color: #3c2d1a;
+}
+
+/* Unique Button */
+.unique-discover-btn {
+  background-color: #c68e4f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.unique-discover-btn:hover {
+  background-color: #a3703f;
+}
+
+/* Unique Hero Image */
+.unique-hero-image {
+  max-width: 60%;
+}
+
+.unique-hero-image img {
+  height: 500px;
+  width: 704px;
+  border-radius: 39px;
+  border: 10px solid #e9a85d;
+}
+
+/* Unique Carousel Indicators */
+.unique-carousel-indicators {
+  position: absolute;
+  bottom: 16px;
+  left: 6%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 5px;
+}
+
+.unique-dot {
+  width: 10px;
+  height: 10px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.unique-dot.active {
+  background: #c68e4f;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .unique-hero-container {
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+    bottom: 51px;
+  }
+
+  .unique-hero {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 38px;
+    width: 100%;
+  }
+
+  .unique-hero-image {
+    order: -1;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .unique-hero-image img {
+    width: 110%;
+    height: auto;
+    max-height: 320px;
+    border-radius: 20px;
+  }
+
+  .unique-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 90%;
+    order: 1;
+    padding: 15px 0;
+  }
+
+  .unique-hero-content h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+  }
+
+  .unique-hero-content p {
+    font-size: 18px;
+    margin-bottom: 12px;
+  }
+
+  .unique-discover-btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+  }
+
+  .unique-carousel-indicators {
+    order: 5;
+    position: static;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 183px;
+    gap: 10px;
+  }
+
+  .unique-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .unique-dot.active {
+    background: #c68e4f;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}

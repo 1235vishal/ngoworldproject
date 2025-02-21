@@ -1,0 +1,105 @@
+/* Main Container */
+.ngo-classes-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f7f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.ngo-classes-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #b37142;
+  margin-bottom: 30px;
+}
+
+/* Wrapper for all class boxes */
+.ngo-classes-wrapper {
+  display: flex;
+  justify-content: center; /* Centers the row */
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px; /* Limits width for centering */
+}
+
+/* Individual Class Box */
+.ngo-class-box {
+  width: 320px; /* Adjust size for better alignment */
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.ngo-class-box:hover {
+  transform: scale(1.05);
+}
+
+/* Class Image */
+.ngo-class-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Class Info */
+.ngo-class-info {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Class Title */
+.ngo-class-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Class Description */
+.ngo-class-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Join Now Button */
+.ngo-class-join {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background: #b37142;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.ngo-class-join:hover {
+  background: #b37142;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ngo-classes-wrapper {
+    max-width: 750px; /* Adjusted width */
+  }
+}
+
+@media (max-width: 768px) {
+  .ngo-classes-wrapper {
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .ngo-class-box {
+    width: 90%;
+  }
+}

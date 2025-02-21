@@ -1,0 +1,47 @@
+/* Center the dots horizontally */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px; /* Always stays at the bottom */
+  left: 34%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Carousel image height: auto on large screens */
+.carousel-item img {
+  width: 100%;
+  /* height: auto; Default height for large screens */
+  object-fit: cover; /* Ensure image fits without distortion */
+}
+
+/* Move dots to the top in small screens and increase slider height */
+@media (max-width: 768px) {
+  .carousel-indicators {
+    top: 10px; /* Move the dots to the top */
+    bottom: auto; /* Remove bottom positioning */
+  }
+  .carousel {
+    position: relative;
+    height: 193px;
+  }
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 204px;
+    bottom: 10px;
+  }
+
+  /* Increase height of the carousel */
+  .carousel-item img {
+    height: 205px; /* Increase the height */
+    object-fit: cover; /* Ensure image fills the area */
+  }
+}
+
+/* Ensure dots stay in place */
+.carousel-indicators li,
+.carousel-indicators button {
+  position: relative !important;
+  margin: 0 5px; /* Spacing between dots */
+}

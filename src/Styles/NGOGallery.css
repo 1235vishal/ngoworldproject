@@ -1,0 +1,109 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+
+  text-align: center;
+}
+
+/* Container */
+.imageworld {
+  background-color: #c68e4f;
+  padding: 20px;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Scroll Container */
+.scroll-container {
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+/* Scroll Content */
+.scroll-content {
+  display: flex;
+  gap: 15px;
+  width: max-content;
+  animation: scrollLeft 20s linear infinite;
+}
+
+/* Reverse animation for second row */
+.right-to-left .scroll-content {
+  animation: scrollRight 20s linear infinite;
+}
+
+/* Image Styling */
+.scroll-content img {
+  width: 250px; /* Default size */
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.scroll-content img:hover {
+  transform: scale(1.05);
+}
+
+/* Left to Right Animation */
+@keyframes scrollLeft {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+/* Right to Left Animation */
+@keyframes scrollRight {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .scroll-content img {
+    width: 200px; /* Reduce size for tablets */
+    height: 120px;
+  }
+}
+
+@media (max-width: 768px) {
+  .scroll-content img {
+    width: 180px; /* Smaller images for mobile */
+    height: 110px;
+  }
+
+  .title {
+    font-size: 24px; /* Adjust heading */
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-content img {
+    width: 150px; /* Smallest size for small mobiles */
+    height: 90px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+}

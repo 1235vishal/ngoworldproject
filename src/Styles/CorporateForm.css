@@ -1,0 +1,90 @@
+/* Overall form container */
+.form-container {
+  width: 60%;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form heading */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+/* Bootstrap Form Groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Form labels */
+.form-label {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Form input fields */
+.form-control {
+  font-size: 16px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Textarea for brief profile */
+textarea.form-control {
+  height: 150px;
+  resize: vertical;
+}
+
+/* Upload input fields */
+.form-control[type="file"] {
+  padding: 5px;
+}
+
+/* Submit button */
+button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .form-container {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .form-control {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}

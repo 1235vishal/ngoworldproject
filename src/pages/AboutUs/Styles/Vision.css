@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+
+.evolution-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background: url("../Overlay.png") no-repeat center center/cover;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 4vw;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .evolution-container {
+    font-size: 11vw;
+  }
+}
